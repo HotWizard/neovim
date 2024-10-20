@@ -1,4 +1,7 @@
 # neovim
+My own neovim configuration
+# Preview
+![Preview GIF](PREVIEW.gif)
 ### Plugins
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
     > A snazzy bufferline for Neovim
