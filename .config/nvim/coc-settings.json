@@ -1,0 +1,3 @@
+{
+	"clangd.arguments": ["--inlay-hints=false", "--header-insertion=never", "--background-index", "--clang-tidy"]
+}
