@@ -35,6 +35,8 @@ My own neovim configuration
     > 💥 Create key bindings that stick. WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type.
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
     > Preview Markdown in your modern browser with synchronised scrolling and flexible configuration.
+### ⚠️ Warning ⚠️
+[```install.sh```](https://raw.githubusercontent.com/HotWizard/neovim/refs/heads/main/install.sh) script fully uninstalls Neovim from your machine!
 ### Installing
 ```sh
 git clone https://github.com/HotWizard/neovim

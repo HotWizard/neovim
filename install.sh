@@ -22,6 +22,14 @@ if [ -d "/squashfs-root" ]; then
     sudo rm -rf "/squashfs-root"
 fi
 
+if [ -d "$HOME/.local/state/nvim" ]; then
+    rm -rf "$HOME/.local/state/nvim"
+fi
+
+if [ -d "$HOME/.cache/nvim" ]; then
+    rm -rf "$HOME/.cache/nvim"
+fi
+
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
