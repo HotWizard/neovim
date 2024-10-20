@@ -36,4 +36,7 @@ My own neovim configuration
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
     > Preview Markdown in your modern browser with synchronised scrolling and flexible configuration.
 ### Installing
-Run ```install.sh``` file
+```sh
+git clone https://github.com/HotWizard/neovim/tree/main \
+cd neovim && ./install.sh
+```
