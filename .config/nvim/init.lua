@@ -14,7 +14,9 @@ require("config.lualine")
 require("config.vscode")
 require("config.noice")
 
-require("lspconfig").clangd.setup({})
+require("lspconfig").clangd.setup({
+    cmd = {"clangd-18"}
+})
 require("lspconfig").lua_ls.setup({
 	on_init = function(client)
 		if client.workspace_folders then
