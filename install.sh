@@ -1,34 +1,17 @@
-if [ -e "/usr/local/bin/nvim" ]; then
-    sudo rm -rf "/usr/local/bin/nvim"
-fi
+dirs=("$HOME/.config/nvim" "$HOME/.local/share/nvim" "squashfs-root" "/squashfs-root" "$HOME/.local/state/nvim" "$HOME/.cache/nvim")
+executable_dirs=("/usr/local/bin/nvim" "/usr/bin/nvim")
 
-if test -f "/usr/bin/nvim"; then
-    sudo rm -rf "/usr/bin/nvim"
-fi
+for executable in "${executable_dirs}"; do
+    if [ -e "$executable" ]; then
+        sudo rm -rf "$executable"
+    fi
+done
 
-if [ -d "$HOME/.config/nvim" ]; then
-    rm -rf "$HOME/.config/nvim"
-fi
-
-if [ -d "$HOME/.local/share/nvim" ]; then
-    rm -rf "$HOME/.local/share/nvim"
-fi
-
-if [ -d "squashfs-root" ]; then
-    rm -rf "squashfs-root"
-fi
-
-if [ -d "/squashfs-root" ]; then
-    sudo rm -rf "/squashfs-root"
-fi
-
-if [ -d "$HOME/.local/state/nvim" ]; then
-    rm -rf "$HOME/.local/state/nvim"
-fi
-
-if [ -d "$HOME/.cache/nvim" ]; then
-    rm -rf "$HOME/.cache/nvim"
-fi
+for dir in "${dirs[@]}"; do
+    if [ -d "$dir" ]; then
+        sudo rm -rf "$dir"
+    fi
+done
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -39,7 +22,11 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install node
 node -v
 npm -v
-npm install --global yarn
+npm i -g clangd marksman
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install lua-language-server marksman
 
 # Downloading neovim and exposing neovim globally.
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -52,5 +39,4 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 cp -R ".config/nvim" "$HOME/.config/"
 
-nvim -c "CocInstall coc-json coc-tsserver coc-clangd coc-lua \
-         coc-sh coc-markdownlint coc-html coc-pyright"
+nvim
