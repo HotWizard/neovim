@@ -113,8 +113,8 @@ return {
 	},
 	"Mofiqul/vscode.nvim",
 	{ "echasnovski/mini.nvim", version = "*" },
-	"vim-autoformat/vim-autoformat",
-	-- lazy.nvim
+	"sbdchd/neoformat",
+    -- lazy.nvim
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",

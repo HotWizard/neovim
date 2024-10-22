@@ -39,8 +39,8 @@ My own neovim configuration
     > lua `fork` of vim-web-devicons for neovim
 14. [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
     > plenary: full; complete; entire; absolute; unqualified. All the lua functions I don't want to write twice.
-15. [vim-autoformat](https://github.com/vim-autoformat/vim-autoformat)
-    > Provide easy code formatting in Vim by integrating existing code formatters.
+15. [neoformat](https://github.com/sbdchd/neoformat)
+    > ✨ A (Neo)vim plugin for formatting code.
 16. [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
     > Neovim/Vim color scheme inspired by Dark+ and Light+ theme in Visual Studio Code
 17. [which-key.nvim](https://github.com/folke/which-key.nvim)
