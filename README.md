@@ -1,7 +1,7 @@
 # neovim
 My own neovim configuration
 # Preview
-![Preview GIF](PREVIEW.gif)
+![Preview GIF](PREVIEW.png)
 ### Plugins
 1. [lazy.nvim](https://github.com/folke/lazy.nvim)
     > 💤 A modern plugin manager for neovim
