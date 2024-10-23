@@ -47,6 +47,8 @@ My own neovim configuration
     > 💥 Create key bindings that stick. WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type.
 18. [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
     > markdown preview plugin for (neo)vim
+### Configuring language formatters
+To configure language formatters you will need to navigate to the ```~/.local/share/nvim/lazy/neoformat/autoload/neoformat/formatters``` directory and then edit any configuration.
 ### ⚠️ Warning ⚠️
 [```install.sh```](https://raw.githubusercontent.com/HotWizard/neovim/refs/heads/main/install.sh) script fully uninstalls Neovim from your machine!
 ### Installing
