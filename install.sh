@@ -31,6 +31,7 @@ echo >> $HOME/.bashrc
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.bashrc
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install lua-language-server marksman
+
 # Downloading neovim and exposing neovim globally.
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
