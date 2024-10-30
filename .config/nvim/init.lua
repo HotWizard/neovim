@@ -13,6 +13,7 @@ require("config.bufferline")
 require("config.lualine")
 require("config.vscode")
 require("config.noice")
+require("config.nvim-notify")
 
 require("lspconfig").clangd.setup({
     cmd = {"clangd-18"}
